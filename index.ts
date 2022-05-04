@@ -1,15 +1,7 @@
 import RikkaPlugin from "@rikka/Common/entities/Plugin";
+import manifest from "./manifest.json";
 
 export default class pinball extends RikkaPlugin {
-    Manifest = {
-        name: "3dpinball",
-        description: "3dpinball",
-        version: "0.0.1",
-        license: "GPL-3.0",
-        author: "V3L0C1T13S",
-        dependencies: [],
-    };
-
     inject() {
         // First we need to create a iframe
         const iframe = document.createElement("iframe");
